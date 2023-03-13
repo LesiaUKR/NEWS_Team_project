@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="shortcut icon" href="./images/fav-news.jpg" type="image/png" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body class="light-mode">
+    <include src="./partials/header.html"></include>
+    <section>
+      <div class="container filters__line">
+        <include src="./partials/filters.html"></include>
+        <include src="./partials/calendar.html"></include>
+      </div>
+    </section>
+    <section>
+      <div class="container list__cards">
+        <ul class="list-card">
+          <li class="card card__weather" style="order: 3">
+            <include src="./partials/weather.html"></include>
+          </li>
+        </ul>
+        <include src="./partials/pagination.html"></include>
+      </div>
+      <div class="no-data no-data__index-page">
+        <include src="./partials/not_found.html"></include>
+      </div>
+    </section>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
